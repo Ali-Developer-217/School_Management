@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Modern Smart School</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="scrolled">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> Smart<span>School</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#features">Facilities</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="admission.html" style="color: var(--gold-highlight);">Admissions</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Admission Hero -->
+    <div class="admission-hero">
+        <div>
+            <h1 data-aos="fade-up">Join Our School</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Start your child's journey to excellence today.</p>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="glass-card form-container" data-aos="fade-up">
+        <div class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Admission Form</div>
+        
+        <form id="admissionForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Student Name *</label>
+                    <input type="text" class="form-control" required placeholder="Enter student's full name">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth *</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <select class="form-control" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Class Applying For *</label>
+                    <select class="form-control" required>
+                        <option value="">Select Class</option>
+                        <option value="kindergarten">Kindergarten</option>
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                        <option value="grade4">Grade 4</option>
+                        <option value="grade5">Grade 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Father's Name *</label>
+                    <input type="text" class="form-control" required placeholder="Enter father's name">
+                </div>
+                <div class="form-group">
+                    <label>Mother's Name *</label>
+                    <input type="text" class="form-control" required placeholder="Enter mother's name">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" class="form-control" required placeholder="+1 234 567 8900">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" class="form-control" required placeholder="parent@example.com">
+                </div>
+                <div class="form-group full-width">
+                    <label>Previous School (If any)</label>
+                    <input type="text" class="form-control" placeholder="Enter previous school name">
+                </div>
+                <div class="form-group full-width">
+                    <label>Residential Address *</label>
+                    <textarea class="form-control" rows="3" required placeholder="Enter complete address"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label>Upload Student Photo</label>
+                    <input type="file" class="form-control" accept="image/*">
+                </div>
+            </div>
+            <button type="submit" class="btn-primary form-submit">Submit Application <i class="fas fa-paper-plane" style="margin-left: 5px;"></i></button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                    <i class="fas fa-graduation-cap"></i> Smart<span>School</span>
+                </a>
+                <p style="color: #cbd5e1; margin-bottom: 1.5rem;">Empowering the next generation with modern education and values.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul style="color: #cbd5e1;">
+                    <li><i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--gold-highlight);"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--gold-highlight);"></i> info@smartschool.edu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Modern Smart School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+    <script src="script.js"></script>
+</body>
+</html>
